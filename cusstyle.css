@@ -32,6 +32,13 @@ body{
 canvas{
   display:block;
   vertical-align:bottom;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2 ;
 }
 
 
@@ -45,6 +52,7 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 :root{
@@ -89,6 +97,7 @@ canvas{
     opacity: 80%;
     transition:0.5s;
     background: linear-gradient(135deg, var(--sgray) 0%,vAr(--sblue) 100%);
+    z-index: 3;
   }
   .doublebtn{
     margin: 5px;
@@ -145,6 +154,7 @@ canvas{
     margin: auto;
     height: 100%;
     max-width: 1400px;
+    z-index: 3;
   }
   .group{
     border: solid 2px var(--slight);
